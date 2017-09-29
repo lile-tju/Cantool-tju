@@ -3,3 +3,5 @@
 3. CanTool装置是接受ecu的信号，和发送信号到ecu。
 4.需要测试接口在进行软件测试的过程中，输入与输出是否准确。
 5.进行单元测试－功能测试－集成测试－场景测试－系统测试－Alpha/Beta Test.
+6.CanTool装置通过CanToolApp将CAN信息发送到上位机。
+7.以Arduino微控制器为基础设计CanTool硬件装置，实现CanTool装置信号的发送和接收。

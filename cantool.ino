@@ -1,10 +1,11 @@
-// demo: CAN-BUS Shield, receive data
+//demo：CAN-TOOL
 #include <mcp_can.h>
 #include <SPI.h>
 
 unsigned char Flag_Recv = 0;
 unsigned char len = 0;
 unsigned char buf[8];
+unsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 char str[20];
 
 void setup()
@@ -34,7 +35,11 @@ void loop()
         Serial.print(buf[i]);Serial.print("\t");
       }
       Serial.println();
-    }
+      }
+    
+    // send data:  id = 0x00, standrad flame, data len = 8, stmp: data buf
+    CAN.sendMsgBuf(0x00, 0, 8, stmp);  
+    delay(100);                       // send data per 100ms
 }
 
 /*********************************************************************************************************

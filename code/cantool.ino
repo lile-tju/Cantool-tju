@@ -1,5 +1,4 @@
 //demo：CAN-TOOL
-#include <mcp_can.h>
 #include <SPI.h>
 
 unsigned char Flag_Recv = 0;
@@ -10,14 +9,7 @@ char str[20];
 
 void setup()
 {
-  CAN.begin(CAN_500KBPS);                       // init can bus : baudrate = 500k
-  attachInterrupt(0, MCP2515_ISR, FALLING);     // start interrupt
   Serial.begin(115200);
-}
-
-void MCP2515_ISR()
-{
-    Flag_Recv = 1;
 }
 
 void loop()
@@ -36,10 +28,7 @@ void loop()
       }
       Serial.println();
       }
-    
-    // send data:  id = 0x00, standrad flame, data len = 8, stmp: data buf
-    CAN.sendMsgBuf(0x00, 0, 8, stmp);  
-    delay(100);                       // send data per 100ms
+
 }
 
 /*********************************************************************************************************

@@ -1,6 +1,6 @@
 //demo：CAN-TOOL
-String comdata =""
-
+//t36080000000025001100
+String comdata = "";
 void setup()
 {
   Serial.begin(115200);

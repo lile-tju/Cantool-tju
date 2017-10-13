@@ -8,7 +8,7 @@
   我们当前阶段需要完成的测试有两部分，
   一是Arduino是否能顺利传送CAN信号到上位机并由CanToolApp软件接收，显示在用户图形界面上；
   二是用户能否在anToolApp的界面上设置CAN信息，将信息通过GUI按钮发送，CanTool装置能否接收并返回成功或失败信息。
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#8B0000>Group Discussion&Cooperation</font>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#8B0000>Group Discussion&Cooperation</font>
 
 <div style="float:left;border:solid 1px 000;margin:40px;"><img src="http://images.cnblogs.com/cnblogs_com/lile-tju/1095316/t_webwxgetmsgimg%20(4).jpg" width="150" height="180" ></div>
 <div style="float:left;border:solid 1px 000;margin:40px;"><img src="http://images.cnblogs.com/cnblogs_com/lile-tju/1095316/t_webwxgetmsgimg%20(2).jpg"  width="150" height="180" ></div>

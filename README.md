@@ -19,5 +19,5 @@
 
 ## 进度  
 完成了Arduino开发，能够实现发送、接收功能。还可以改进的地方：对于错误信息的输入加以限制。  
-Arduino的代码较为精简，没有进行单元测试。  
+Arduino的代码使用Google的googletest进行测试。  
 已经我们的代码提交给windows开发小组，准备测试Windows小组的代码。

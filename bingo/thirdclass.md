@@ -8,7 +8,5 @@
  &emsp;&emsp; 我们当前阶段需要完成的测试有两部分，
   一是Arduino是否能顺利传送CAN信号到上位机并由CanToolApp软件接收，显示在用户图形界面上；
   二是用户能否在anToolApp的界面上设置CAN信息，将信息通过GUI按钮发送，CanTool装置能否接收并返回成功或失败信息。
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#8B0000>Group Discussion&Cooperation</font>
-
-<div style="float:left;border:solid 1px 000;margin:20px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104637881-1330805727.jpg" width="250" height="200" ></div><div style="float:left;border:solid 1px 000;margin:20px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104654474-674439380.jpg"  width="250" height="200" ></div><div style="float:left;border:solid 1px 000;margin:40px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104411756-1731934495.jpg" width="230" height="190" ></div>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#8B0000>Group Discussion&Cooperation</font><div style="float:left;border:solid 1px 000;margin:20px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104637881-1330805727.jpg" width="250" height="200" ></div><div style="float:left;border:solid 1px 000;margin:20px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104654474-674439380.jpg"  width="250" height="200" ></div><div style="float:left;border:solid 1px 000;margin:40px;"><img src="http://images2017.cnblogs.com/blog/1237473/201710/1237473-20171016104411756-1731934495.jpg" width="230" height="190" ></div>
 <div style="clear:both;"></div>

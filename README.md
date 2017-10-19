@@ -23,6 +23,8 @@
 
 ## 文档解释
   test：测试数据——>test1-4  由cantool装置发送到上位机
+  cantool.ino是利用串口通信和windows进行通信
+  cantool2.0.ino是利用蓝牙串口通信和Android进行通信
 
 ## 进度  
 完成了Arduino开发，能够实现发送、接收功能。还可以改进的地方：对于错误信息的输入加以限制。  

@@ -5,10 +5,10 @@
          10.15-10.18号完成蓝牙的串口通信
          10.10-10.20基本确立测试接口与方法
 
-##接下来主要任务
-1.成功将cantool装置与APP进行交互信息，完善接收处理字符串以及测试接口的设计细节————反复阅读“problem statement”
-2.文档的整理以上交或展示之用
-3.与APP组确立一些相互的细节（知道APP组能做些什么，同时也让APP组知道我们能做些什么）
+## 接下来主要任务<br>
+1.成功将cantool装置与APP进行交互信息，完善接收处理字符串以及测试接口的设计细节————反复阅读“problem statement”<br>
+2.文档的整理以上交或展示之用<br>
+3.与APP组确立一些相互的细节（知道APP组能做些什么，同时也让APP组知道我们能做些什么）<br>
 
 ## 小组分工     
   		  
@@ -30,3 +30,5 @@
 完成了Arduino开发，能够实现发送、接收功能。还可以改进的地方：对于错误信息的输入加以限制。  
 Arduino的代码使用Google的googletest进行测试。  
 我们的代码已经提交给windows开发小组，也获得windows小组的部分代码准备测试。
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#FF00FF>Group Discussion&Cooperation</font>
+<div style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/7f93a44accacd76357315a1074ba3531/xmlnote/D05F6A3ECBAB4B20B240547194789A75/613" ></div><div  style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/7f93a44accacd76357315a1074ba3531/xmlnote/0082CBB7AD7E43CA8FE64CD787BF190C/621" ></div>

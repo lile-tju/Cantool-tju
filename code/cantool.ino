@@ -7,7 +7,7 @@ int numdata=0;
 char flag = 1;
 
 void setup(){
-  Serial.begin(115200);
+  Serial.begin(9600);
   while(Serial.read() >= 0){}
 }
 void send(){
@@ -27,7 +27,27 @@ void receive(){
   if(Serial.available()>0){
     delay(100);
     numdata = Serial.readBytes(buffer,21);
-    Serial.println(buffer);
+    if(buffer[0]== 'V'){
+      Serial.println("SV2.5-HV2.0");
+    }
+    else if(buffer[0]=='O' && buffer[1]=='1'){
+      Serial.println("\r");
+    }
+    else if(buffer[0]=='S'&& buffer[1]=='n'){
+      Serial.println("\r");
+    }
+    else if(buffer[0]=='C'){
+      Serial.println("\r");
+    }
+    else if(buffer[0]=='t'){
+      Serial.println(buffer);
+    }
+    else if(buffer[0]=='T'){
+      Serial.println(buffer);
+    }
+    else{
+      Serial.println("\\BEL");
+    }
   }
   while(Serial.read() >= 0){}
   for(int i=0;i<25;i++){
@@ -35,8 +55,8 @@ void receive(){
   }
 }
 void loop(){
-  receive();
-  send(); 
+  receive(); 
+  send();
 }
 /*********************************************************************************************************
 

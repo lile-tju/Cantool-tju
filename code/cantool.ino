@@ -18,7 +18,9 @@ void send(){
     Serial.print(datas[21*j+k]);
     }
     else{
-    Serial.println(datas[21*j+k]);  
+    Serial.println(datas[21*j+k]);
+  //Serial.print(datas[21*j+k]);
+  //Serial.print('/r')
     }
   }
   }

@@ -35,7 +35,7 @@ void receive(){
     Serial.print("SV2.5-HV2.0");
     }
     else if(buffer[0]=='O' && buffer[1]=='1'  ){
-      Serial.print("/r");
+      Serial.print("\r");
       MsTimer2::set(1000,send);
       MsTimer2::start();
     }

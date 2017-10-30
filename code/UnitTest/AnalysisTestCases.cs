@@ -1,10 +1,14 @@
-﻿using Shouldly;
+using Shouldly;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xunit;
 
-namespace unitTest
+namespace AnalysisTest
 {
-    public class AnalysisTest
+    public class AnalysisTestCases
     {
         [Fact]
         //测试返回信息
@@ -15,11 +19,11 @@ namespace unitTest
         }
 
         [Fact]
-        //测试返回信息_1
+        //测试返回信息
         public void canReceiptTestOfReturnMessageNull()
         {
             var canRT = new Analysis();
-            canRT.canReceipt("", 2, 0, 0, 0).ShouldBe("");
+            canRT.canReceipt("", 2, 0, 0, 1).ShouldBe("");
         }
 
         [Fact]
@@ -31,7 +35,7 @@ namespace unitTest
         }
 
         [Fact]
-        //测试打开成功_1
+        //测试打开成功
         public void canReceiptTestOfOpenOkAnother()
         {
             var canRT = new Analysis();
@@ -45,15 +49,29 @@ namespace unitTest
             var canRT = new Analysis();
             canRT.canReceipt("wrong", 2, 2, 0, 0).ShouldBe("open false");
         }
+        [Fact]
+        //测试打开失败
+        public void canReceiptTestOfOpenFalseSec()
+        {
+            var canRT = new Analysis();
+            canRT.canReceipt("wrong", 2, 2, 0, 0).ShouldBe("wrong");
+        }
 
         [Fact]
-        //测试打开失败_1
+        //测试打开失败
         public void canReceiptTestOfOpenFalseAnother()
         {
             var canRt = new Analysis();
             canRt.canReceipt("wrong", 2, 2, 0, 1).ShouldBe("open false");
         }
 
+        [Fact]
+        //测试打开失败
+        public void canReceiptTestOfOpenFalseOther()
+        {
+            var canRt = new Analysis();
+            canRt.canReceipt("wrong", 2, 2, 0, 1).ShouldBe("wrong");
+        }
         [Fact]
         //测试速率设置成功
         public void canReceiptTestOfSnSetOk()
@@ -63,7 +81,7 @@ namespace unitTest
         }
 
         [Fact]
-        //测试速率设置成功_1
+        //测试速率设置成功
         public void canReceiptTestOfSnSetOkAnother()
         {
             var canRt = new Analysis();
@@ -79,11 +97,41 @@ namespace unitTest
         }
 
         [Fact]
-        //测试速率设置失败_1
+        //测试速率设置失败
+        public void canReceiptTestOfSnSetFalseOther()
+        {
+            var canRt = new Analysis();
+            canRt.canReceipt("wrong", 0, 0, 2, 1).ShouldBe("");
+        }
+        [Fact]
+        //测试速率设置失败
+        public void canReceiptTestOfSnSetFalseThird()
+        {
+            var canRt = new Analysis();
+            canRt.canReceipt("wrong", 0, 0, 2, 1).ShouldBe("null");
+        }
+
+        [Fact]
+        //测试速率设置失败
         public void canRecaiptTestOfSnSetFalseAnother()
         {
             var canRt = new Analysis();
             canRt.canReceipt("wrong", 1, 0, 2, 1).ShouldBe("Sn set false");
+        }
+
+        [Fact]
+        //测试速率设置失败
+        public void canReceiptTestOfSnSetFalseSec()
+        {
+            var canRt = new Analysis();
+            canRt.canReceipt("wrong", 1, 0, 2, 1).ShouldBe("null");
+        }
+        [Fact]
+        //测试速率设置失败
+        public void canReceiptTestOfSnSetFalseAnother()
+        {
+            var canRt = new Analysis();
+            canRt.canReceipt("wrong", 1, 0, 2, 1).ShouldBe("");
         }
 
         [Fact]
@@ -95,7 +143,7 @@ namespace unitTest
         }
 
         [Fact]
-        //测试关闭成功_1
+        //测试关闭成功
         public void canReceiptTestOfCloseOkAnother()
         {
             var canRt = new Analysis();
@@ -147,6 +195,7 @@ namespace unitTest
             var xCT = new Analysis();
             xCT.xCalculate(3.0, 2.0, 1.0).ShouldBe(1);
         }
+        //没有处理除数为0的情况
 
         [Fact]
         //测试将CanData转化为二进制数
@@ -157,13 +206,27 @@ namespace unitTest
         }
 
         [Fact]
+        //测试将CanData转化为二进制数
+        public void toBinaryCanDataTestAnother()
+        {
+            var tBCDT = new Analysis();
+            tBCDT.tobinaryCanData("1010").ShouldBe("0001000000010000");
+        }
+
+        [Fact]
         //测试8个8位二进制数转化为16进制
         public void to16CanDataTest()
         {
             var t16CDT = new Analysis();
             t16CDT.to16CanData("0000000000000001000000100000001100000100000001010000011000000111").ShouldBe("0x000x010x020x030x040x050x060x07");
         }
-
+        [Fact]
+        //测试8个8位二进制数转化为16进制
+        public void to16CanDataTestAnother()
+        {
+            var t16CDT = new Analysis();
+            t16CDT.to16CanData("0000000000000001000000100000001100000100000001010000011000000111").ShouldBe("0001020304050607");
+        }
         [Fact]
         //测试把用户输入的内容转化为Can信息
         public void canSendAnalysisTest()
@@ -186,7 +249,7 @@ namespace unitTest
         {
             var cST = new Analysis();
             string[] testStr = { "0101" };
-            List<string> list = new List<string> (testStr);
+            List<string> list = new List<string>(testStr);
             cST.canSend(list).ShouldBe("0101\r");
         }
     }

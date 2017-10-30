@@ -22,5 +22,5 @@ WindowsApp小组的工作正接近尾声，已实现了基本的功能：<br>
 4.在本周五之前WindowsApp小组将整合好的项目交给我们完成单元测试和功能测试。<br>
 &emsp;&emsp;最后，祝两个小组合作愉快，圆满结课！<br>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#FF00FF>小组讨论</font>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color=#FF00FF>小组讨论</font>
 <div style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/fab582e792117b023b71034778db3b47/xmlnote/C82F7010E1CF455DACF136FFAD59DDA9/691" ></div><div  style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/fab582e792117b023b71034778db3b47/xmlnote/7FAB7719C3574A4992A62FE13BFF5A56/688" ></div><div  style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/fab582e792117b023b71034778db3b47/xmlnote/68577ECB4D4449CAA4E70C47F4E4DCF6/689" ></div><div  style="float:left;border:solid 1px 000;margin:10px;"><img src="http://note.youdao.com/yws/public/resource/fab582e792117b023b71034778db3b47/xmlnote/3B75A1C088164FC497B0B991374D3D2A/694" ></div>

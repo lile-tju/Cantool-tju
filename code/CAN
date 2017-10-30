@@ -1,0 +1,60 @@
+//CAN
+#include <SPI.h>
+#include<mcp_can.h>
+
+unsigned char Flag_Recv = 0;
+unsigned char len = 0;
+unsigned char id_len = 0;
+unsigned char char_len = 0;
+unsigned char buf[8];
+char str[21];
+unsigned char stmp[25] = {0, 1, 2, 3, 4, 5, 6, 7,8,9,A,B,C,D,E,F};
+
+void setup()
+{
+  CAN.begin(CAN_500KBPS);                       // init can bus : baudrate = 500k
+  attachInterrupt(0, MCP2515_ISR, FALLING);     // start interrupt
+  Serial.begin(115200);
+}
+
+void MCP2515_ISR()
+{
+    Flag_Recv = 1;
+}
+
+void loop()
+{
+    if(Flag_Recv)                           // check if get data
+    {
+      Flag_Recv = 0;                        // clear flag
+      CAN.readMsgBuf(&len, buf);
+      id_len = id.length();
+      for(int i=0;i<id_len;i++)
+      {
+        str[i]=id[i];
+      }
+      str[id_len]=len;
+      forfor(int j=0;i<id_len;i++)
+      {
+        str[i+id_len+1]=id[i];
+      }
+    }
+
+    char_len = data.length();
+    if(char_len=25){
+      for(int i=0;i<16;i++)
+      {
+        stmp[i] = data[i+4];
+      } 
+      CAN.sendMsgBuf(0x00, 1, 8, stmp);
+    }
+     else
+     {
+      for(int i=0;i<8;i++)
+      {
+        stmp[i] = data[i+4];
+      } 
+      CAN.sendMsgBuf(0x00, 0, 4, stmp);
+     } 
+    delay(100);                       // send data per 100ms
+}

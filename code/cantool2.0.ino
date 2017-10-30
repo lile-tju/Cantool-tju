@@ -10,7 +10,7 @@ char flag;
 int j=0;
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   while(Serial.read() >= 0){}
 }
 void send(){
